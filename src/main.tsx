@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; // Assuming your component file has a .tsx extension
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'normalize.css';
+import App from './App.tsx'; // Assuming your component file has a .tsx extension
+import 'normalize.css/normalize.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'react-bootstrap/dist/react-bootstrap.js';
 import './index.css';
 
 const rootElement = document.getElementById('root') as HTMLElement;
