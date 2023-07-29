@@ -50,11 +50,14 @@
     .nav-link {
       transition: 0.7s ease;
       color: rgb(255, 255, 255) !important;
+      cursor: pointer;
       font-size: 1.2rem;
   
       &:hover {
         font-size: 1.4em;
+        cursor: pointer;
         color: #94deea !important;
+        border-bottom: 1px dashed #94deea !important;
       }
     }
   
