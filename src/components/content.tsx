@@ -1,6 +1,6 @@
+
 import About from './about';
 import Projects from './projects';
-import Resume from './resume';
 import Contact from './contact';
 
 const Content: React.FC = () => {
@@ -9,7 +9,6 @@ const Content: React.FC = () => {
         <div className='content'>
             <About />
             <Projects/>
-            <Resume/>
             <Contact/>
         </div>
     )

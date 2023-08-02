@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="social-section">
-                    <div><h3 className="social-heading">Social</h3></div>
+                    <div><h3 className="social-heading">My Social Media</h3></div>
                     <div className="icons-section">
                         <a target="_blank" rel="noreferrer" href="https://github.com/Gavisito"> <FontAwesomeIcon className="icons" icon={faGithub} color="white"/></a>
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anthony-gavidia-vasquez-3544b3224/"> <FontAwesomeIcon className="icons" icon={faLinkedin} color="white"/></a>

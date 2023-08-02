@@ -2,12 +2,9 @@ const About: React.FC = () => {
 
     return(
         <div id="about" className="about-me">
-            <div className="about-card">About</div>
-            <div className="about-row">
-                <div className="skill-card">Skills</div>
-                <div className="services-card">Services</div>
+            <div className="about-text">
+                <h1>About</h1>
             </div>
-            <div className="socials-card">Socials</div>
         </div>
     );
 };

@@ -29,8 +29,8 @@ const Navigation: React.FC = () => {
         </div>
         <Nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <Nav.Link as={Link} duration={350} to="about" smooth={true} offset={-90} className="nav-link"  onClick={handleNavLinkClick}>About</Nav.Link>
-          <Nav.Link as={Link} to="projects" duration={350} smooth={true} offset={-90} className="nav-link" onClick={handleNavLinkClick}>Art Projects</Nav.Link>
-          <Nav.Link as={Link} to="resume" duration={350} smooth={true} offset={-90} className="nav-link" onClick={handleNavLinkClick}>Web Projects</Nav.Link>
+          <Nav.Link as={Link} to="projects" duration={350} smooth={true} offset={-90} className="nav-link" onClick={handleNavLinkClick}>Projects</Nav.Link>
+          <Nav.Link as={Link} to="resume" duration={350} smooth={true} offset={-90} className="nav-link" onClick={handleNavLinkClick}>Resume</Nav.Link>
           <Nav.Link as={Link} to="contact" duration={350} smooth={true} offset={-90} className="nav-link" onClick={handleNavLinkClick}>Contact</Nav.Link>
         </Nav>
         <div className={`ham-icon ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
