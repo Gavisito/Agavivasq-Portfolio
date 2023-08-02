@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className="f-row-two">
-                <p>Copyright © 2023 <a href="#" target="_self" >Agavivasq</a></p>
+                <p>Copyright © 2023 <a className="cr-link" href="#" target="_self" >Agavivasq</a></p>
             </div>
         </div>
 

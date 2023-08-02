@@ -1,6 +1,6 @@
 import About from './about';
-import Art from './artProjects';
-import WebApps from './webApps';
+import Projects from './projects';
+import Resume from './resume';
 import Contact from './contact';
 
 const Content: React.FC = () => {
@@ -8,8 +8,8 @@ const Content: React.FC = () => {
     return (
         <div className='content'>
             <About />
-            <Art/>
-            <WebApps/>
+            <Projects/>
+            <Resume/>
             <Contact/>
         </div>
     )

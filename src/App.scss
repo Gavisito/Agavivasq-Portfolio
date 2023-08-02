@@ -11,7 +11,7 @@
     padding: 0 20px !important;
     position: fixed !important;
     z-index: 999 !important;
-    box-shadow: 0 2px 4px #2d2d2d !important;
+    box-shadow: 0 2px 4px #c6c6c620 !important;
 
     .nav {
       display: flex;
@@ -49,7 +49,7 @@
     }
   
     .nav-link {
-      transition: 0.7s ease;
+      transition: 0.5s ease;
       color: rgb(255, 255, 255) !important;
       cursor: pointer;
       font-size: 1.2rem;
@@ -201,6 +201,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width:75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
   
         @media (max-width: 850px) and (max-height: 1024px),
                (max-width: 768px) and (max-height: 1024px),
@@ -305,21 +308,25 @@
   .f-row-one{
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     @mixin brief-info($font-size: 1.5em, $padding-top: 3%) {
-      width:75%;
+      width:100%;
       max-height: 100%;
-      margin-left: 5%;
+      text-align: center;
+      align-items: center;
       padding-top: $padding-top;
       font-size: $font-size;
     }
     .myName {
       @include brief-info(2em);
-    }
+      }
 
     .footer-about {
       @include brief-info(1.2em, 1%);
-      padding-bottom: 4%;
+      padding-bottom: 2.5%;
+      margin-left:17.5%;
+      margin-right: 17.5%;
+      width: 65%;
     }
 
   .social-section{
@@ -327,18 +334,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 
-
-    
     .icons-section{
       gap: 1em;
       display:inline-flex;
+      padding-bottom: 1%;
     }  
 
     .icons{
-      width: 27px;
+      transition: ease-in 0.2s;
+      width: 30px;
       height: auto;
+      &:hover{
+        cursor: pointer;
+        color: #94deea !important;
+        border-bottom: 1px dashed #94deea !important;
+      }
     }
   }
   }
@@ -349,5 +360,14 @@
     text-align: center;
     margin-right: 10%;
     margin-left: 10%;
+    .cr-link{
+      transition: ease 0.4s;
+      &:hover{
+        cursor: pointer;
+        color: #94deea !important;
+        border-bottom: 1px dashed #94deea;
+  
+      }
+    }
   }
 }

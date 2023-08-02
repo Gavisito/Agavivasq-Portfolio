@@ -6,7 +6,7 @@ const Portrait: React.FC = () => {
             <img className="img" src="/portrait.jpg" alt="AGV Original Conetent Portrait"/>
             <div className="intro">
                 <div className="intro-text">
-                    <h1>Hey, I'm Anthony Gavidia-Vasquez</h1>
+                    <h1>Hi, I'm Anthony Gavidia-Vasquez</h1>
                 </div>
                 <div className="summary">
                     <h5>A Web Developer & Artist catering to your web development needs
