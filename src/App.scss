@@ -1,6 +1,7 @@
-
+@import  'animate.css';
   //the following sass/css is directed towards the top-naviagtion menu as well as the the hamburger menu for mobile users
   .navigation {
+    width: 100%;
     min-height: 80px;
     display: flex;
     justify-content: space-between !important;
@@ -94,27 +95,33 @@
   
       .nav {
         position: fixed;
-        right: -100%;
-        top: 80px;
-        gap: 0;
+        right: 0%;
+        top:75px;
+        opacity: 0%;
+        visibility: hidden;
+        gap:0;
         border: 1px solid rgb(75, 75, 75);
         flex-direction: column !important;
         background-color: black;
-        width: 45%;
-        height: 88vh;
+        width: 100%;
+        height: max-content;
         text-align: center;
-        transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   
         .nav-link {
           display: flex;
           border-bottom: 1px solid rgb(75, 75, 75);
           width: 100%;
+          height: 3em;
+          padding-top: 3%;
           justify-content: center;
           margin-left: 2vw;
         }
   
         &.active {
-          right: 0;
+          visibility: visible;
+          top:80px;
+          opacity: 100%;
         }
       }
     }
@@ -243,22 +250,25 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 3%;
+  padding-top: 0.5%;
   @mixin content-section($height: 20em){
     height: $height;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 13px;
     box-shadow: 0px 2px 5px #888888;
-    padding-top: 2.5%;
+    padding-top: 2%;
+    margin-top: 2.5%;
   }
   .about-me{
     @include content-section($height:25em);
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 3em;
+    padding-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
     @mixin about-section(){
@@ -284,12 +294,60 @@
   }
 }
 
-
-
-//the following is directed towards the footer f the website
+//the following is directed towards the footer 0f the website
 .footer{
   width: 100%;
-  height: 10em;
+  height: max-content;
   background-color: black;
+  display: flex;
+  flex-direction: column;
   color:white;
+  .f-row-one{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    @mixin brief-info($font-size: 1.5em, $padding-top: 3%) {
+      width:75%;
+      max-height: 100%;
+      margin-left: 5%;
+      padding-top: $padding-top;
+      font-size: $font-size;
+    }
+    .myName {
+      @include brief-info(2em);
+    }
+
+    .footer-about {
+      @include brief-info(1.2em, 1%);
+      padding-bottom: 4%;
+    }
+
+  .social-section{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+
+    
+    .icons-section{
+      gap: 1em;
+      display:inline-flex;
+    }  
+
+    .icons{
+      width: 27px;
+      height: auto;
+    }
+  }
+  }
+
+  .f-row-two{
+    border-top: 1px dashed white;
+    padding-top: 1%;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }

@@ -6,12 +6,12 @@ import Footer from './components/footer';
 
 const App = () => {
   return(
-    <div>
+    <>
       <Navigation />
       <Portrait/>
       <Content/>
       <Footer/>
-    </div>
+    </>
   );
 };
 
