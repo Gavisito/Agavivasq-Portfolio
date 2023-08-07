@@ -28,7 +28,7 @@ const Navigation: React.FC = () => {
           </div>
         </div>
         <Nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
-          <Nav.Link as={Link} duration={350} to="about" smooth={true} offset={140} className="nav-link"  onClick={handleNavLinkClick}>About</Nav.Link>
+          <Nav.Link as={Link} duration={350} to="about" smooth={true} offset={176} className="nav-link"  onClick={handleNavLinkClick}>About</Nav.Link>
           <Nav.Link as={Link} to="projects" duration={350} smooth={true} offset={-90} className="nav-link" onClick={handleNavLinkClick}>Projects</Nav.Link>
           <Nav.Link as={Link} to="contact" duration={350} smooth={true} offset={-90} className="nav-link" onClick={handleNavLinkClick}>Contact</Nav.Link>
         </Nav>

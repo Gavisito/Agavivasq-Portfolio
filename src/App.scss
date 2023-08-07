@@ -33,7 +33,7 @@
   
       &:hover {
         font-size: 1.6em;
-        color: #94deea;
+        color: #a6baf5;
       }
     }
   
@@ -52,8 +52,8 @@
       &:hover {
         font-size: 1.4em;
         cursor: pointer;
-        color: #94deea !important;
-        border-bottom: 1px dashed #94deea !important;
+        color: #a6baf5 !important;
+        border-bottom: 1px dashed #a6baf5 !important;
       }
     }
   
@@ -232,7 +232,7 @@
   
   .img-container::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 70% opacity */
+    background-color: rgba(0, 0, 0, 0.58); /* Black with 70% opacity */
     position: absolute;
     top: 0;
     left: 0;
@@ -249,27 +249,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  @mixin content-section($width: 100%, $height: 20em, $margin: 0%){
+  @mixin content-section($height: 33em){
     height: $height;
-    width: $width;
-    margin-left: $margin;
-    margin-right: $margin;
+    width: 100%;
     background-color: white;
-    border-radius: 13px;
     box-shadow: 0px 2px 5px #888888;
     padding-top: 1em;
-    height: max-content;
+    height: $height;
     padding-bottom: 3%;
   }
   .about-me{
-    @include content-section($height:34em);
+    @include content-section();
     display:flex;
     flex-direction: row;
     padding-right: 1em;
     padding-left: 1em;
     @mixin about-section(){
       width: 100%;
-      height:max-content;
       font-size:2em;
 
     }
@@ -279,15 +275,15 @@
     }
   }
   .projects{ //scrolling of projects in form of cards
-    @include content-section($height:34em);
+    @include content-section();
   }
   .contact{
-    @include content-section($height:34em);
+    @include content-section($height:fit-content);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     color: white;
+    background-color: #dce2f4;
     
     .Contact-Form{
       display: flex;
@@ -295,11 +291,12 @@
       border: 1px solid black;
       border-radius: 7px;
       box-shadow: 4px 2px 8px#000000;
-      padding: 1.5% 3% 2%;
+      padding: 2% 3% 2%;
       width: fit-content;
       align-items: center;
       height: fit-content;
       background-color: #1a1a1d;
+      margin-top: 2%;
       .inputs_section{
         display: flex;
         flex-direction: column;
@@ -360,7 +357,7 @@
         }
 
         textarea[name=message] {
-          @include inputs-boxes($height: 14em, $mbtm:1.5em);
+          @include inputs-boxes($height: 11em, $mbtm:1.5em);
         }
       }
 
@@ -368,9 +365,12 @@
         width: max-content;
         height: 2.5em;
         padding: 0% 2vw;
-        box-shadow: 2px 1px 4px #2f2f2f;
-        background-color: rgb(247, 247, 247);
+        border: 1px solid #ffffff;
+        box-shadow: 1px 3px 4px #000000;
         border-radius: 10px;
+        &:hover{
+          background-color: #dce2f4;
+        }
 
       }
     }
@@ -427,8 +427,8 @@
       height: auto;
       &:hover{
         cursor: pointer;
-        color: #94deea !important;
-        border-bottom: 1px dashed #94deea !important;
+        color: #a6baf5 !important;
+        border-bottom: 1px dashed #a6baf5 !important;
       }
     }
   }
@@ -444,8 +444,8 @@
       transition: ease 0.4s;
       &:hover{
         cursor: pointer;
-        color: #94deea !important;
-        border-bottom: 1px dashed #94deea;
+        color: #a6baf5 !important;
+        border-bottom: 1px dashed #a6baf5;
   
       }
     }
