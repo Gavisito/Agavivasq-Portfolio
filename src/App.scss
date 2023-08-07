@@ -288,27 +288,33 @@
     @include content-section($width: 90%, $height:34em, $margin: 5%);
     display: flex;
     flex-direction: row;
-    justify-content: center;
     
     .Contact-Form{
       display: flex;
       flex-direction: column;
       border: 1px solid black;
-      border-radius: 13px;
+      border-radius: 7px;
       box-shadow: 4px 2px 5px #888888;
-      padding: 1.5% 6% 3%;
+      padding: 1.5% 3% 2%;
+      width: fit-content;
       align-items: center;
       height: fit-content;
+      .inputs_section{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
       .fm-row-one {
         display: flex;
         flex-direction: column;
         padding-top: 1.5%;
-        @mixin inputs-boxes($width: 50vw, $height: 7vh, $mbtm: 5%) {
+        @mixin inputs-boxes($width: 100%, $height: 6vh, $mbtm: 2%) {
           width: $width;
           height: $height;
           margin-bottom: $mbtm;
-          text-align: center;
+          padding-left: 1.5%;
           border: 1px solid black;
+          border-radius: 7px;
           transition: border-color 0.3s;  
           &:hover{
             border-color: #a0b6f0;
@@ -332,13 +338,14 @@
       .fm-row-two{
         display: flex;
         flex-direction: column;
-        @mixin inputs-boxes($width: 50vw, $height: 7vh, $mbtm: 5%) {
+        @mixin inputs-boxes($width: 30vw, $height: 7vh, $mbtm: 5%) {
           width: $width;
           height: $height;
           margin-bottom: $mbtm;
-          text-align: center;
           border: 1px solid black;
+          border-radius: 7px;
           transition: border-color 0.3s;  
+          padding-left: 1.5%;
           &:hover{
             border-color: #a0b6f0;
           }
