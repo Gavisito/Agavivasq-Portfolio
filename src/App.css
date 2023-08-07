@@ -8,7 +8,7 @@
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
-  background-color: black;
+  background-color: #0b0b0b;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -261,20 +261,17 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
 }
 .content .about-me {
   height: 34em;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   background-color: white;
   border-radius: 13px;
   -webkit-box-shadow: 0px 2px 5px #888888;
           box-shadow: 0px 2px 5px #888888;
   padding-top: 1em;
-  margin-bottom: 2em;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -299,15 +296,14 @@
 }
 .content .projects {
   height: 34em;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   background-color: white;
   border-radius: 13px;
   -webkit-box-shadow: 0px 2px 5px #888888;
           box-shadow: 0px 2px 5px #888888;
   padding-top: 1em;
-  margin-bottom: 2em;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -315,15 +311,14 @@
 }
 .content .contact {
   height: 34em;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   background-color: white;
   border-radius: 13px;
   -webkit-box-shadow: 0px 2px 5px #888888;
           box-shadow: 0px 2px 5px #888888;
   padding-top: 1em;
-  margin-bottom: 2em;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -331,10 +326,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: white;
 }
 .content .contact .Contact-Form {
   display: -webkit-box;
@@ -346,8 +346,8 @@
           flex-direction: column;
   border: 1px solid black;
   border-radius: 7px;
-  -webkit-box-shadow: 4px 2px 5px #888888;
-          box-shadow: 4px 2px 5px #888888;
+  -webkit-box-shadow: 4px 2px 8px #000000;
+          box-shadow: 4px 2px 8px #000000;
   padding: 1.5% 3% 2%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -358,6 +358,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: #1a1a1d;
 }
 .content .contact .Contact-Form .inputs_section {
   display: -webkit-box;
@@ -379,12 +380,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 1.5%;
+  padding-top: 0.5em;
 }
 .content .contact .Contact-Form .fm-row-one input[name=from_name] {
-  width: 100%;
-  height: 6vh;
-  margin-bottom: 2%;
+  width: 55vw;
+  height: 3em;
+  margin-bottom: 1em;
   padding-left: 1.5%;
   border: 1px solid black;
   border-radius: 7px;
@@ -399,9 +400,9 @@
   border-color: rgb(0, 0, 79);
 }
 .content .contact .Contact-Form .fm-row-one input[name=from_email] {
-  width: 100%;
-  height: 6vh;
-  margin-bottom: 2%;
+  width: 55vw;
+  height: 3em;
+  margin-bottom: 1em;
   padding-left: 1.5%;
   border: 1px solid black;
   border-radius: 7px;
@@ -425,9 +426,9 @@
           flex-direction: column;
 }
 .content .contact .Contact-Form .fm-row-two input[name=subject] {
-  width: 30vw;
-  height: 7vh;
-  margin-bottom: 5%;
+  width: 55vw;
+  height: 3em;
+  margin-bottom: 2em;
   border: 1px solid black;
   border-radius: 7px;
   -webkit-transition: border-color 0.3s;
@@ -442,9 +443,9 @@
   border-color: rgb(0, 0, 79);
 }
 .content .contact .Contact-Form .fm-row-two textarea[name=message] {
-  width: 30vw;
-  height: 20vh;
-  margin-bottom: 2%;
+  width: 55vw;
+  height: 14em;
+  margin-bottom: 1.5em;
   border: 1px solid black;
   border-radius: 7px;
   -webkit-transition: border-color 0.3s;
@@ -462,7 +463,7 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: 7vh;
+  height: 2.5em;
   padding: 0% 2vw;
   -webkit-box-shadow: 2px 1px 4px #2f2f2f;
           box-shadow: 2px 1px 4px #2f2f2f;
@@ -475,7 +476,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: black;
+  background-color: #0c0c0d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -502,7 +503,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3%;
+  padding-top: 2.5%;
   font-size: 2em;
 }
 .footer .f-row-one .footer-about {

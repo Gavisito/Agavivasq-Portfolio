@@ -5,7 +5,7 @@
     min-height: 80px;
     display: flex;
     justify-content: space-between !important;
-    background-color: black;
+    background-color: #0b0b0b;
     align-items: center;
     opacity: 93%;
     padding: 0 20px !important;
@@ -249,9 +249,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
-  @mixin content-section($width: 95%, $height: 20em, $margin: 2.5%){
+  @mixin content-section($width: 100%, $height: 20em, $margin: 0%){
     height: $height;
     width: $width;
     margin-left: $margin;
@@ -260,12 +258,11 @@
     border-radius: 13px;
     box-shadow: 0px 2px 5px #888888;
     padding-top: 1em;
-    margin-bottom: 2em;
     height: max-content;
     padding-bottom: 3%;
   }
   .about-me{
-    @include content-section($width: 90%, $height:34em, $margin: 5%);
+    @include content-section($height:34em);
     display:flex;
     flex-direction: row;
     padding-right: 1em;
@@ -282,23 +279,27 @@
     }
   }
   .projects{ //scrolling of projects in form of cards
-    @include content-section($width: 90%, $height:34em, $margin: 5%);
+    @include content-section($height:34em);
   }
   .contact{
-    @include content-section($width: 90%, $height:34em, $margin: 5%);
+    @include content-section($height:34em);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: white;
     
     .Contact-Form{
       display: flex;
       flex-direction: column;
       border: 1px solid black;
       border-radius: 7px;
-      box-shadow: 4px 2px 5px #888888;
+      box-shadow: 4px 2px 8px#000000;
       padding: 1.5% 3% 2%;
       width: fit-content;
       align-items: center;
       height: fit-content;
+      background-color: #1a1a1d;
       .inputs_section{
         display: flex;
         flex-direction: column;
@@ -307,8 +308,8 @@
       .fm-row-one {
         display: flex;
         flex-direction: column;
-        padding-top: 1.5%;
-        @mixin inputs-boxes($width: 100%, $height: 6vh, $mbtm: 2%) {
+        padding-top: 0.5em;
+        @mixin inputs-boxes($width: 55vw, $height: 3em, $mbtm: 1em) {
           width: $width;
           height: $height;
           margin-bottom: $mbtm;
@@ -338,7 +339,7 @@
       .fm-row-two{
         display: flex;
         flex-direction: column;
-        @mixin inputs-boxes($width: 30vw, $height: 7vh, $mbtm: 5%) {
+        @mixin inputs-boxes($width: 55vw, $height: 3em, $mbtm: 2em) {
           width: $width;
           height: $height;
           margin-bottom: $mbtm;
@@ -359,13 +360,13 @@
         }
 
         textarea[name=message] {
-          @include inputs-boxes($height:20vh, $mbtm:2%);
+          @include inputs-boxes($height: 14em, $mbtm:1.5em);
         }
       }
 
       input[name=submitbtn]{
         width: max-content;
-        height: 7vh;
+        height: 2.5em;
         padding: 0% 2vw;
         box-shadow: 2px 1px 4px #2f2f2f;
         background-color: rgb(247, 247, 247);
@@ -380,7 +381,7 @@
 .footer{
   width: 100%;
   height: max-content;
-  background-color: black;
+  background-color: #0c0c0d;
   display: flex;
   flex-direction: column;
   color:white;
@@ -388,7 +389,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    @mixin brief-info($font-size: 1.5em, $padding-top: 3%) {
+    @mixin brief-info($font-size: 1.5em, $padding-top: 2.5%) {
       width:100%;
       max-height: 100%;
       text-align: center;
