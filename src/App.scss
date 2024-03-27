@@ -401,14 +401,11 @@
       }
     }
     .leaflet-container{
-      width:35vw;
-      height: 50vh;
+      max-width:200px;
+      height: auto;
       margin-top: 5em;
       box-shadow: 4px 2px 8px#fdfdfd28;
-      @media (max-width: 1000px) or (max-height: 400px){
-       width: 35em;
-       height: 25em;
-    }
+
     }
 
     .leafletMap{
